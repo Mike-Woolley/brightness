@@ -232,7 +232,7 @@ int main(int argc, char * const argv[]) {
 
   float brightness;
   if (action == ACTION_LIST) {
-    usage();
+    if (argc > 0) usage();
   } else {
     if (argc != 1) usage();
 
